@@ -1,0 +1,17 @@
+label {
+    display: block;
+    /* margin-bottom: 5px; */
+    font-weight: bold;
+    color: white;
+  }
+  
+  input {
+    width: 100%;
+    padding: 6px;
+    border: 2px solid blue;
+    border-radius: 10px;
+    box-shadow: 2px slategrey;
+    margin: 3px 0;
+    height: 90px;
+    /* margin-bottom: 3px; */
+  }
