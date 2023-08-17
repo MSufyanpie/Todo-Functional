@@ -8,27 +8,22 @@ import * as yup from "yup";
 
 export default function Todo() {
     const { register, control, handleSubmit, formState, reset } = useForm({
-        mode: "all",
-        resolver: yupResolver(schema),
+        
       });
-      const { isSubmitSuccessful, isSubmitted } = formState;
+    //   const { isSubmitSuccessful, isSubmitted } = formState;
   return (
     <div>
-    <h2
-        className="heading"
-        style={{ textAlign: "center", marginTop: "1%", fontWeight: "bolder" }}
-      >
-        <Badge bg="success">TODO-LIST</Badge>
-      </h2>
+    
 
       <Card
+      
         style={{
           border: "none ",
           borderRadius: "10px",
           marginLeft: "30%",
           marginRight: "30%",
           height: "auto",
-          width: "40%",
+          width: "50%",
           overflow: "auto",
           backgroundImage:
             "linear-gradient( 65.9deg,rgba(85,228,224,1) 5.5%, rgba(75,68,224,0.74) 54.2%, rgba(64,198,238,1) 55.2%, rgba(177,36,224,1) 98.4%)",
@@ -37,11 +32,17 @@ export default function Todo() {
         }}
         className="shadow-lg p-3 "
       >
+        <h2
+        className="heading"
+        style={{ textAlign: "center", marginTop: "1%", fontWeight: "bolder" }}
+      >
+        <Badge bg="success">TODO-LIST</Badge>
+      </h2>
         <Card.Body style={{ display: "flex", flexDirection: "column" }}>
           <form
-            onSubmit={handleSubmit((data) => {
-              onSubmit(data);
-            })}
+            // onSubmit={handleSubmit((data) => {
+            //   onSubmit(data);
+            // })}
           >
             <label htmlFor="FirstName">Enter Task Description</label>
             <input
