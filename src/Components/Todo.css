@@ -6,12 +6,21 @@ label {
   }
   
   input {
+    border: none;
     width: 100%;
     padding: 6px;
-    border: 2px solid blue;
-    border-radius: 10px;
+    /* border: 2px solid blue;
+    border-radius: 10px; */
     box-shadow: 2px slategrey;
     margin: 3px 0;
     height: 90px;
     /* margin-bottom: 3px; */
+  }
+  .addtask-btn{
+    margin-top: 5%;
+    margin-left: 20%;
+  }
+  .reset-btn{
+    margin-top: 5%;
+    margin-left: 5%;
   }

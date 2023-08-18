@@ -1,0 +1,13 @@
+.save-btn{
+    margin-top: 5%;
+    margin-left: 30%;
+    width: 80px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.cancel-btn{
+    margin-top: 5%;
+    margin-left: 3%;
+    border-radius: 10px;
+    font-weight: bold;
+}
