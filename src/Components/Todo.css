@@ -9,18 +9,47 @@ label {
     border: none;
     width: 100%;
     padding: 6px;
-    /* border: 2px solid blue;
-    border-radius: 10px; */
-    box-shadow: 2px slategrey;
+    /* border: 2px solid blue;*/
+    border-radius: 20px; 
+    box-shadow: 5px slategrey;
     margin: 3px 0;
-    height: 90px;
-    /* margin-bottom: 3px; */
+    height: 70px;
+    box-shadow: 0 0 10px #080808;
+    
   }
   .addtask-btn{
-    margin-top: 5%;
-    margin-left: 20%;
+    margin-top: 10%;
+    margin-left: 30%;
+    letter-spacing: 0.1em;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 10px #eee;
+  
+  display: block;
+   
   }
   .reset-btn{
-    margin-top: 5%;
-    margin-left: 5%;
+    margin-top: 10%;
+    margin-left: 2%;
+    width: 80px;
+    letter-spacing: 0.1em;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 15px #eee;
+  
+  display: block;
+  }
+  .addtask-btn:hover{
+    background: linear-gradient(45deg, #0037ff, #00adff);
+    transform: scale(1.1);
+  }
+  .reset-btn:hover{
+    background: linear-gradient(45deg, #1b1b1b, #464747);
+    transform: scale(1.1);
+  }
+  input:focus{
+    border-color: 3px solid blue;
+    background-color: rgb(206, 240, 229);
   }

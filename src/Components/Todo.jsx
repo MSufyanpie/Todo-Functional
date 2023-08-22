@@ -121,39 +121,52 @@ const CancelHandler=()=>{
           marginRight: "30%",
           height: "60%",
           width: "40%",
-
+          marginTop:'1%',
           backgroundImage:
-            "linear-gradient( 65.9deg,rgba(85,228,224,1) 5.5%, rgba(75,68,224,0.74) 54.2%, rgba(64,198,238,1) 55.2%, rgba(177,36,224,1) 98.4%)",
-          display: "flex",
+            "linear-gradient( #b6fbff, #83a4d4)",
           flexDirection: "column",
+          
+          boxShadow: '0px 5px 15px rgba(0, 0, 0, 0.2)', // Adding a subtle shadow
+          transition: 'transform 0.2s',
         }}
         className="shadow-lg p-3 "
       >
+         <Card.Title
+          style={{
+            fontSize: '1.5rem',
+            
+            
+          }}
+        >
         <h2
           className="heading"
           style={{
             textAlign: "center",
-            marginTop: "0.5%",
+            
             fontWeight: "bolder",
           }}
         >
-          <Badge bg="dark">TODO-LIST</Badge>
+          <Badge style={{
+            boxShadow: '0 0 5px #c20d0d',
+          }} bg="danger">TODO-LIST</Badge>
         </h2>
+        </Card.Title>
         <Card.Body style={{ display: "flex", flexDirection: "column" }}>
           <form onSubmit={handleSubmit(onSubmit)}>
-            <label htmlFor="TaskDescription">Enter Task Description</label>
+            {/* <label style={{textAlign:'center'}}
+             htmlFor="TaskDescription">Enter Task Description</label><br/> */}
             <input
               type="text"
-              placeholder="Enter Description..."
+              placeholder="Enter Task Description..."
               id="TaskDescription"
               {...register("TaskDescription")}
             />
             <Container>
-              <Button className="addtask-btn" type="submit">
+              <Button className="addtask-btn rounded-pill" type="submit">
                 Add Task
               </Button>
               <Button
-                className="reset-btn"
+                className="reset-btn rounded-pill"
                 variant="dark"
                 type="button"
                 onClick={() => reset()}
